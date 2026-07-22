@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  micropython-lint:
+    name: MicroPython syntax check
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyflakes
+      - run: pyflakes micropython/main.py micropython/boot.py
+
+  # Note: Rust ESP32 builds require the `esp` toolchain (Xtensa target).
+  # We skip it in CI to keep things simple; contributors should `cargo build`
+  # locally after installing `espup` and `espflash`.
