@@ -2,6 +2,8 @@
 
 Welcome to your first Skilluv project!
 
+You are here because your trade runs on hardware - *dev-embarque-iot*.
+
 Edit this file by adding a line under `## My introduction` with:
 - Your first name or handle
 - Your city (optional)
@@ -16,6 +18,8 @@ Skilluv will automatically detect your PR and unlock your first badge.
 ## Bonjour Skilluv (français)
 
 Bienvenue dans ton premier projet Skilluv !
+
+Tu es ici parce que ton métier tourne sur du matériel - *dev-embarque-iot*.
 
 Modifie ce fichier en ajoutant une ligne sous `## Ma présentation` avec :
 - Ton prénom ou pseudo
